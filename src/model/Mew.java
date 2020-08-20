@@ -2,6 +2,50 @@ package model;
 
 //PROGRESSION - 5
 //Go to JAVA Resouces - src/model and create a child class called Mew inside the model package with the following arguments
+public class Mew extends Pokemon{
+	String characteristics;
+	String type;
+	String evolution;
+	int baseExp;
+	public String getCharacteristics() {
+		return characteristics;
+	}
+	public void setCharacteristics(String characteristics) {
+		this.characteristics = characteristics;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public String getEvolution() {
+		return evolution;
+	}
+	public void setEvolution(String evolution) {
+		this.evolution = evolution;
+	}
+	public int getBaseExp() {
+		return baseExp;
+	}
+	public void setBaseExp(int baseExp) {
+		this.baseExp = baseExp;
+	}
+	public Mew(String pokemonName, int pokemonNumber, String characteristics, String type, String evolution,
+			int baseExp) {
+		super(pokemonName, pokemonNumber);
+		this.pokemonName = pokemonName;
+		this.pokemonNumber = pokemonNumber;
+		this.characteristics = characteristics;
+		this.type = type;
+		this.evolution = evolution;
+		this.baseExp = baseExp;
+	}
+
+
+
+
+}
 //String characteristics 
 //String type
 //String evolution
